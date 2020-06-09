@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+  <head>
+    <title>Email verification</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'styles/bootstrap.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'styles/verification.css' %}"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="{% static 'images/favicon-32x32.png' %}"
+      type="image/png"
+    />
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container2 bg-white">
+        <p class="h5">Please verify your email.</p>
+        <br />
+        <small class="text-muted" style="margin-top: 200px !important;">
+          A verification link was sent to your email. Please click on the link
+          to activate your account. Click <a href="">here</a> to change your
+          email.
+        </small>
+      </div>
+    </div>
+  </body>
+</html>
