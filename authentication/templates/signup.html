@@ -21,7 +21,8 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
   </head>
   <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="" method="POST">
+      {% csrf_token %}
       <img
         class="mb-4"
         src="{% static 'images/bootstrap-solid.svg' %}"
